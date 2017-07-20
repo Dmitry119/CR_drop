@@ -1,3 +1,7 @@
+/*
+version 1.01
+ */
+
 package com.dd;
 
 import jdk.nashorn.internal.ir.IfNode;
@@ -12,10 +16,16 @@ public class Main {
 
     public static void main(String[] args) {
 
+        while (true) {
+            calculate();
+        }
+
+    }
+
+    private static void calculate() {
+        String input = null;
         int events_number;
         double chance;
-        String input = null;
-
         System.out.println("Enter number of events");
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -50,6 +60,6 @@ public class Main {
 
         }
 
-
+        System.out.println("\n\n");
     }
 }
